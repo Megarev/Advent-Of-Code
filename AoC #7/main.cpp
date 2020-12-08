@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 #include <map>
-#include <regex>
 #include <sstream>
 
 struct Bag {
