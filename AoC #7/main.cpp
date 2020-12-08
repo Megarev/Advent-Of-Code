@@ -42,7 +42,7 @@ std::vector<Bag> ReadData(const std::string& filename) {
         while (std::getline(reader, line)) {
             const std::string& word = "contain";
             line = line.replace(line.find(word), word.size(), ","); // Take out the word 'contain'
-            line.pop_back(); // Take the dot from the back
+            line.pop_back(); // Take out the dot from the back
             line.erase(std::remove(line.begin(), line.end(), ' '), line.end()); // No whitespaces
 
             std::stringstream ss(line);
